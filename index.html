@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+        <meta charset="UTF-8">
+        <meta name="google-site-verification" content="qwVGUIIqonuI3hQ-Nz-Z26SZzKp4dPFiFYqG0b84dRg" />
+        <style>
+
+
+
+body{
+    background-image: url(https://wallpapercave.com/wp/wp3481207.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: centre;
+} 
+
+.div1 {
+  
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
+}
+
+.name{
+    font-size: 25px;
+    position: relative;
+    font-family:ADLaM Display ;
+}
+.name a{
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.nav {
+    position: absolute;
+    right: 160px;
+}
+.nav a{
+   
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    transition: 3s;
+}
+.dropdown{
+    
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+  
+    min-width: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: none;
+ 
+  
+}
+.dropdown a{
+    font-size: 12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+.nav a:hover{
+    color:#00abf0;
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+   
+    
+}
+.about a{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    color: white;
+    transition: 3s;
+}
+.about a:hover{
+    color:#00abf0;
+    display: inline-block;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+.about:hover .dropdown{
+    display:flex;
+    flex-direction:column;
+ 
+}
+/* Define the keyframes for rotation */
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.name:hover{
+    animation: rotating 1s linear infinite;
+   
+}
+.name a:hover{
+    color: #00abf0;
+}
+.name::before{
+    content: '';
+    background: #081b21;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: show 1s  ease forwards;
+    animation-delay: 0.4s;
+   
+}
+@keyframes show{
+           100%{
+            width: 0;
+           }
+}
+.nav::before{
+    content: '';
+    background: #081b21;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: show 1s  ease forwards;
+    animation-delay: 0.4s;
+   
+}
+@keyframes show{
+           100%{
+            width: 0;
+           }
+}
+.about::before{
+    content: '';
+    background: #081b21;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: show 1s  ease forwards;
+    animation-delay: 0.4s;
+   
+}
+@keyframes show{
+           100%{
+            width: 0;
+           }
+}
+.welcome::before{
+    content: '';
+    background: #081b21;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: show 1s  ease forwards;
+    animation-delay: 0.4s;
+   
+}
+@keyframes show{
+           100%{
+            width: 0;
+           }
+}
+.welcome{
+    color: whitesmoke;
+    min-width: 100px;
+    position: absolute;
+    top: 390px;
+    left: 0px;
+    backdrop-filter: blur(8px);
+    border: 1px solid transparent;
+    border-radius: 50px;
+
+    
+}
+.history{
+    color: white;
+    backdrop-filter: blur(20px);
+    min-width: 100px;
+    position: absolute;
+    top: 800px;
+    border-radius: 20px;
+}
+::-webkit-scrollbar{
+   width: 0px;
+}
+::webkit-scrollbar-track{
+    color: #081b21;
+}
+::webkit-scrollbar-thumb{
+    background: #081b21;
+}
+body::before{
+    content: '';
+    background: #081b21;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: show 1s  ease forwards;
+    animation-delay: 0.4s;
+   
+}
+@keyframes show{
+           100%{
+            width: 0;
+           }
+}
+
+
+
+
+
+
+
+        </style>
+        <link href='https://fonts.googleapis.com/css?family=ADLaM Display' rel='stylesheet'>
+        </head>
+        <body>
+           
+            <div class="div1">
+                <section class="name">
+                    <a href="">Partha</a>
+                    </section>
+                    <nav class="nav">
+                    <a href="">HOME</a>
+                    <a href="">VIDEOS</a>
+                    </nav>
+                    <nav class="about">  <a  href="">ABOUT PUNJAB</a>
+                    
+                        <div class="dropdown">
+                            <a href="#history">HISTORY</a>
+                            <a href="">MUSIC</a>
+                            <a href="">DANCE</a>
+                            <a href="">ART</a>
+                            <a href="">PAINTING</a>
+                            <a href="">RELIGIOUS</a>
+                            <a href="">WEDDING</a>
+                            <a href="">CUISINE</a>
+                            <a href="">LANGUAGE</a>
+                            <a href="">DRESS</a>
+                            <a href="">FESTIVALS</a>
+                        </div>
+                    </nav>
+                    
+                   
+            </div>
+            <div class="welcome">
+                <h1>THIS WEBSITE WELCOME'S YOU</h1>
+                <p>Welcome to our community! We're delighted to have you here with us. <br>As a member of our community, you'll have the opportunity to connect with like-minded individuals,<br> share your thoughts and ideas, and learn from others.We believe in fostering a positive<br> and supportive environment where everyone feels valued and heard. Whether you're here to seek advice, share your <br>expertise, or simply connect with others, we're confident that you'll find what you're looking for.<br> Once again, welcome aboard! We can't wait to see what you'll bring to our community.
+                </p>
+            </div>
+            
+            <div  id="history" class="history">
+                <h1>ABOUT PUNJAB</h1>
+
+                <h2> HISTORY</h2>
+                <p>             
+            
+                    Punjabi culture grew out of the settlements along the five rivers (the name Punjab, is derivedderive <br>from two Persian words, Panj meaning "Five" and Âb meaning "Water") which served as an <br>important route to the Near East as early as the ancient Indus Valley civilization, dating back<br> to 3000 BCE.[1] Agriculture has been the major economic feature of the Punjab and has therefore<br> formed the foundation of Punjabi culture, with one's social status being determined by <br>landownership.[1] The Punjab emerged as an important agricultural region, especially following <br>the Green Revolution during the mid-1960's to the mid-1970's, has been described as the<br> "breadbasket of both India and Pakistan".[1] Besides being known for agriculture and trade, the<br> Punjab is also a region that over the centuries has experienced many foreign invasions and <br>consequently has a long-standing history of warfare, as the Punjab is situated on the principal <br>route of invasions through the northwestern frontier of the Indian subcontinent, which promoted <br>to adopt a lifestyle that entailed engaging in warfare to protect the land.  </p>
+                
+            
+</div>
+
+            
+
+
+        
+        </body>
+    </head>
+</html>
